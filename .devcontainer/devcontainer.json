@@ -1,0 +1,12 @@
+{
+  "name": "Web Service",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "HTTP",
+      "onAutoForward": "notify",
+      "visibility": "public"
+    }
+  },
+  "postStartCommand": "bash .devcontainer/start.sh"
+}
